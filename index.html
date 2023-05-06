@@ -1,99 +1,144 @@
 
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
-<html> <head>
-<title>Saideh Ahangary</title>
-<meta name="google-site-verification" content="d3wVAA3sxQdqoTR2dN2V59StkTteq3uTmVpO-lvqGMM" />
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saideh Ahangary</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">Homepage</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#publications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PUBLICATIONS</a>
+        <a href="#certifications" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CERTIFICATIONS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
 
-<style type="text/css">
-html { background: white; margin:0;}
- body { font-family: 'Courier New', Courier; "Times New Roman" }
-h1 {font-family: 'Times New Roman';}
-h2 {font-family: 'Times New Roman';}
-#wrap {
-   width:850px;
-   margin:0 auto;
-}
-#left_col {
-   float:left;
-   width:300px;
-}
-#right_col {
-   float:right;
-   width:550px;
-}
-.jobfont {
-font-weight:bold;
-color:#e62a00;
-}
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="saideh.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+         
+          <a class="icon-link w3-text-sand w3-hover-text-amber" href="http://linkedin.com/in/saideh-ahangary/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="cv.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="CV_saideh.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
 
-.topics a {color: black;} /* un-visited link */
-a:link {color:black;} /* visited link */
-a:visited {color:black;} /* visited link */
-a:hover {color: black;}   /* mouse over link */
-td { padding: 10px; text-align: left;}
-</style>
-<script>
-function toggle() {
-    var image = document.getElementById('portrait');
-    if (image.src.match("pic.jpg")) {
-        image.src = "pic.jpg";
-}
-else if (image.src.match("pic.jpg")){
-image.src = "pic.jpg";
-}
-else if (image.src.match("pic.jpg")){
-image.src = "pic.jpg";
-}
-else if (image.src.match("pic.jpg")){
-image.src = "pic.jpg";
-}
-else if (image.src.match("pic.jpg")){
-image.src = "pic.jpg";
-}
-else if (image.src.match("pic.jpg")){
-image.src = "pic.jpg";
-}
-}
-</script>
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Homepage</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#certifications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CERTIFICATIONS</a>
+          <a href="#publications" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PUBLICATIONS</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            <h1>Saideh Ahanagry</h2>
+            <h2></h3>
+            <p></p>
+          </div>
 
-<div id="wrap">
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+               I am a Ph.D. candidate in the computer science department at the <a href="http://www.vu.nl/">Vrije
+    Universiteit Amsterdam</a>, My research focuses on designing “correct-by-construction” networks
+    that offer provable guarantees on correctness, reliability, and security (e.g., proving that
+    network invariants such as path reachability hold, or that routing “loops” are absent, or that
+    link utilizations never exceed predefined thresholds). To this end, my work investigates the
+    use of formal verification methods and techniques to tackle these challenges.
+            </p>
+            <p class=""> 
+            
+            </p>
+            <p class=""> 
 
-    <div id="left_col">
-      <br><br>
-      <img id="portrait" src="pic.jpg" onclick="toggle()" width="250"
-      align="left">
-    </div>
-<div id="right_col">
+            </p>
+          </div>
 
-    <h1>Saideh Ahangary</h1>
+          <!--publications-->
+          <div id="publications" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PUBLICATIONS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <p>Find the latest publication on  <a href="https://scholar.google.com/citations?user=K6CPxxoAAAAJ&hl=en">Google Scholar</a> </p>
+            </div>
+            
+          </div>
+        
+         <!--Certifications-->
+          <div id="certifications" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CERTIFICATIONS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <p> Google Cloud Certification: Cloud DevOps Engineer Professional Certificate <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/N2PGH6QAKRNR">[see certification]</a> </p>
+              <p> Architecting with Google Kubernetes Engine Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/CTBXYTBR4Q86">[see certification]</a> </p>
+              <p> Google Cloud Certification: Cloud Engineer Professional Certificate <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/ZGGJ2CZGN5GG">[see certification]</a> </p>
+              <p> ISO/IEC 27001:2013 Information Security Management System (ISMS) Auditor/Lead Auditor Course <a href="isms.jpg">[see certification]</a> </p>
+              <p>  Blockchain Specialization <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/LPJC7XNUT42Z">[see certification]</a> </p>
+            
+            </div>
+            
+          </div>
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">CONTACT ME</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>   Send me an email <a href="mailto:s.ahangary@vu.nl">here</a></p>
+            </div>
+          </div>
 
-    I am a Ph.D. candidate in the computer science department at the <a href="http://www.vu.nl/">Vrije
-    Universiteit Amsterdam</a>, My research focuses on designing “correct-by-construction” networks 
-    that offer provable guarantees on correctness, reliability, and security (e.g., proving that 
-    network invariants such as path reachability hold, or that routing “loops” are absent, or that 
-    link utilizations never exceed predefined thresholds). To this end, my work investigates the 
-    use of formal verification methods and techniques to tackle these challenges. 
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Saideh Ahangary</p>
+           <!-- End footer -->
+        </footer>
 
-    <br><br>
-    Here is my <a href="cv.pdf">CV</a>. 
-    <br><br>
-    Send me an email
-    <a href="mailto:s.ahangary@vu.nl">here</a>.
- 
-
-
- <br><br>
-</div>
-</div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-76299274-1', 'auto');
-  ga('send', 'pageview');
-</script>
-</body> </html>
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
